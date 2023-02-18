@@ -1,13 +1,16 @@
-import React from "react";
+import {React,useState} from "react";
 import "./under.css";
 import InputMask from "react-input-mask";
-
-
+import { data } from '../home/data';
 
 // imported imges
 import img from "./img16.png";
 
+
 function Under({active,setActive}) {
+  const [data1,setData1] = useState(data)
+
+
 const removeItem= ()=> {
   setActive(false)
 }
@@ -59,5 +62,4 @@ const removeItem= ()=> {
     </div>
   );
 }
-
 export default Under;
