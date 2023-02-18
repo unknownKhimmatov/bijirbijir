@@ -1,0 +1,151 @@
+.under-container{
+  /* display: none; */
+}
+ .under-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.793);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  
+}
+
+.under-item {
+  width: 85%;
+  height: 700px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px 0 40px 40px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.under-item .close{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  user-select: none;
+}
+.under-item .img-box {
+  width: 42%;
+  height: 70%;
+}
+.under-item .img-box .head-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.under-item .img-box .imgs-box {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.under-item .img-box .imgs-box img {
+  width: 120px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.under-item .text-box {
+  width: 53%;
+  height: auto;
+  padding: 0 20px 0 20px;
+}
+.under-item .text-box h2 {
+  margin-bottom: 10px;
+}
+.under-item .text-box small {
+  color: #6b7280;
+}
+
+.under-item .text-box p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  line-height: 20px;
+  color: #6b7280;
+}
+.under-item .text-box .price {
+  align-items: center;
+  margin: 40px 0 20px 0;
+}
+.under-item .text-box .price h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.under-item .text-box .price del {
+  font-size: 14px;
+}
+.under-item .text-box .count {
+  width: 245px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.under-item .text-box .count p {
+  color: white;
+}
+
+.under-item .text-box .count button {
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.under-item .text-box .text-bottom{
+  width: 400px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.under-item .text-box .nomer{
+  width: 245px;
+  height: 50px;
+  font-size: 18px;
+  color: black;
+  border: 1px solid black;
+}
+.under-item .text-box .text-bottom button{
+  padding: 10px 20px;
+  background-color: black;
+  height: 50px;
+  width: 120px;
+  color: white;
+  /* border: none; */
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
