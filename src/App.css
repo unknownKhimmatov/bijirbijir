@@ -11,3 +11,28 @@
   font-size: 17px;
   color: white;
 }
+@media(max-width:600px){
+  .nav-container a{
+    font-size: 15px;
+  }
+  .nav-container h2{
+    font-size: 20px;
+  }
+  .nav-container img{
+    width: 20vw;
+  }
+}
+@media(max-width:420px){
+  .nav-container {
+    position: relative;
+  }
+  .nav-container h2{
+    font-size: 20px;
+  }
+  .nav-container img{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    max-width: 40px;
+  }
+}

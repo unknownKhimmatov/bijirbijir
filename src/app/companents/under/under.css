@@ -8,7 +8,6 @@
   align-items: center;
   top: 0;
   right: 0;
-
 }
 
 .under-item {
@@ -20,10 +19,6 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .under-item .close {
@@ -95,6 +90,7 @@
 }
 
 .under-item .text-box .count {
+  width: 180px;
   height: 50px;
   background-color: black;
   color: white;
@@ -168,12 +164,12 @@
   .carousel-root {
    width: 40%;
    position: absolute;
-   top: 5px;
-   left: 3px;
+   top: 10px;
+   left: 10px;
   }
   .under-item .carousel .thumb{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
   }
   .under-item .text-box{
@@ -188,6 +184,9 @@
   }
 }
 @media(max-width:600px){
+  .under-item{
+    height: 80%;
+  }
   .under-item .text-box .title{
     display: none;
 
@@ -197,10 +196,11 @@
     bottom: 7px;
     right: 7px;
   }  
-  .under-item .text-box .nomer{
+  .under-item .text-box .count{
+    width: 160px;
     position: absolute;
     bottom: 7px;
-    left: 7px;
+    left: 10px;
   }
   .carousel-root {
     width: 70%;
