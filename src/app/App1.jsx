@@ -11,9 +11,9 @@ import logo from "./logo.png"
 function App1() {
   return (
     <div className='container'>
-        <div className="nav-container flex padding">
+        <div style={{position:'relative', overflow:'hidden'}} className="nav-container flex padding">
             <h2>Modern Shop</h2>
-            <img src={logo} alt="" />
+            <img style={{width:'10vh'}} src={logo} alt="" />
             <a href="tel:+998 (95) 955 59 37">+998 (95) 955 59 37</a>
         </div>
     <HomePage/>

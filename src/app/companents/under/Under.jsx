@@ -1,50 +1,62 @@
-import {React,useState} from "react";
+import { React, useState } from "react";
 import "./under.css";
 import InputMask from "react-input-mask";
 import { data } from '../home/data';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 // imported imges
-import img from "./img16.png";
+import { GrClose } from "react-icons/gr"
+import { AiOutlineRightCircle } from "react-icons/ai"
 
 
-function Under({active,setActive}) {
-  const [data1,setData1] = useState(data)
+function Under({ active, setActive, item, incr, decr, count1 }) {
+  const [img1, setImg1] = useState(item.img)
 
-
-const removeItem= ()=> {
-  setActive(false)
-}
+  const removeItem = () => {
+    setActive(false)
+  }
   return (
-    <div style={{ display :active ? "block" : "none"}} className="under-container">
+    <div style={{ display: active ? "block" : "none" }} className="under-container">
       <div className="under-section">
         <div className="under-item">
           <div className="img-box">
-            <img className="head-img" src={img} alt="" />
-            <div className="imgs-box flex">
-              <img src={img} alt="" />
-              <img src={img} alt="" />
-              <img src={img} alt="" />
-              <img src={img} alt="" />
+            <div className="head-imgs flex">
+              <Carousel>
+                <div>
+                  <img className="head-img" src={item.img} alt="" />
+                </div>
+                <div>
+                  <img className="head-img" src={item.img} alt="" />
+                </div>
+                <div>
+                  <img className="head-img" src={item.img} alt="" />
+                </div>
+                <div>
+                  <img className="head-img" src={item.img} alt="" />
+                </div>
+                <div>
+                  <img className="head-img" src={item.img} alt="" />
+                </div>
+              </Carousel>
             </div>
           </div>
           <div className="text-box">
             <h2>Sweet Corn</h2>
             <small>1lb</small>
             <p>
-              Maize, also known as corn, is a cereal grain first domesticated by
-              indigenous peoples in southern Mexico about 10,000 years ago. The
-              leafy stalk of th...
+              {item.title}
             </p>
             <strong>See more</strong>
             <div className="price flex">
-              <h2>$4.00</h2>
-              <del>$5.00</del>
+              <h2>${item.price1} {item.price2} </h2>
+              <del>${item.del}</del>
             </div>
             <strong>50 dona mavjud</strong>
             <div className="count grid">
-              <button>-</button>
-              <p>5</p>
-              <button>+</button>
+              <button onClick={() => decr()}>-</button>
+              <p>{count1}</p>
+              <button onClick={() => incr()}>+</button>
             </div>
             <div className="text-bottom flex">
               <InputMask
@@ -56,7 +68,7 @@ const removeItem= ()=> {
               <button>Sotib olish</button>
             </div>
           </div>
-            <h1 onClick={removeItem} className="close">X</h1>
+          <GrClose onClick={removeItem} className="close" />
         </div>
       </div>
     </div>

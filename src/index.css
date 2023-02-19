@@ -25,5 +25,12 @@ code {
   align-items: center;
 }
 .padding{
-  padding: 0 140px 0 140px;
+  padding: 0 170px 0 170px;
 }
+@media(max-width:1340px){
+  .padding{
+    padding: 10px;
+  }
+}
+
+
