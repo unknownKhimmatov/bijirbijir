@@ -3,7 +3,7 @@ import "./under.css";
 import InputMask from "react-input-mask";
 import { data } from '../home/data';
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // imported imges
 import { GrClose } from "react-icons/gr"
@@ -24,19 +24,19 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
             <div className="head-imgs flex">
               <Carousel>
                 <div>
-                  <img className="head-img" src={item.img} alt="" />
+                  <img className="head-img none" src={item.img} alt="" />
                 </div>
                 <div>
-                  <img className="head-img" src={item.img} alt="" />
+                  <img className="head-img none" src={item.img} alt="" />
                 </div>
                 <div>
-                  <img className="head-img" src={item.img} alt="" />
+                  <img className="head-img none" src={item.img} alt="" />
                 </div>
                 <div>
-                  <img className="head-img" src={item.img} alt="" />
+                  <img className="head-img none" src={item.img} alt="" />
                 </div>
                 <div>
-                  <img className="head-img" src={item.img} alt="" />
+                  <img className="head-img none" src={item.img} alt="" />
                 </div>
               </Carousel>
             </div>
@@ -44,7 +44,7 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
           <div className="text-box">
             <h2>Sweet Corn</h2>
             <small>1lb</small>
-            <p>
+            <p className="title">
               {item.title}
             </p>
             <strong>See more</strong>
@@ -65,7 +65,7 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
                 pattern="^\d{4} \d{4} \d{4} \d{4}$"
                 required
               />
-              <button>Sotib olish</button>
+              <button className="buy">Sotib olish</button>
             </div>
           </div>
           <GrClose onClick={removeItem} className="close" />
