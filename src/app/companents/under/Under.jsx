@@ -11,7 +11,6 @@ import { AiOutlineRightCircle } from "react-icons/ai"
 
 
 function Under({ active, setActive, item, incr, decr, count1 }) {
-  const [img1, setImg1] = useState(item.img)
 
   const removeItem = () => {
     setActive(false)

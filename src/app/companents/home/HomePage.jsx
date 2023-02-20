@@ -42,7 +42,7 @@ function HomePage() {
                   <p>сум / 1 кг</p>
                 </div>
                 <p>{item.title} </p>
-                <div className="btn-box">
+                <div className="btn-box" onClick={() => handClick(item)}>
                   <button onClick={() => incr()} className="add-btn">Купить</button>
                 </div>
               </div>
