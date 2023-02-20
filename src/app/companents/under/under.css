@@ -199,6 +199,16 @@
   .under-item .text-box .title {
     font-size: medium;
   }
+  .under-item .text-box .nomer{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+  .under-item .text-box .buy{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
 
   .carousel-root {
     width: 70%;
