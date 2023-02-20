@@ -65,6 +65,7 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
                 pattern="^\d{4} \d{4} \d{4} \d{4}$"
                 required
                 placeholder="+999 (99) 999 99 99"
+                value={+998}
               />     
                      <button className="buy">Sotib olish</button>
             </div>
