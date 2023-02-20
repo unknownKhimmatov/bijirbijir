@@ -30,7 +30,7 @@
 }
 
 .carousel-root {
-  width: 90%;
+  width: 80%;
   height: 65vh;
 }
 
@@ -194,11 +194,8 @@
 
   .under-item .text-box .title{
   font-size: medium;
-  width: 80vw;
   }
-  .under-item .text-box .nomer{
-    margin-top: -8px;
-  }
+
 
   .under-item .text-box .buy{
     position: absolute;
