@@ -62,7 +62,6 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
                 className="nomer"
                 mask="+999 (99) 999 99 99"
                 pattern="^\d{4} \d{4} \d{4} \d{4}$"
-      
                 placeholder="+999 (99) 999 99 99"
               />     
               <button className="buy">Sotib olish</button>
