@@ -59,13 +59,14 @@ function Under({ active, setActive, item, incr, decr, count1 }) {
               <button onClick={() => incr()}>+</button>
             </div>
             <div className="text-bottom flex">
-              <InputMask
+            <InputMask
                 className="nomer"
                 mask="+999 (99) 999 99 99"
                 pattern="^\d{4} \d{4} \d{4} \d{4}$"
                 required
-              />
-              <button className="buy">Sotib olish</button>
+                placeholder="+999 (99) 999 99 99"
+              />     
+                     <button className="buy">Sotib olish</button>
             </div>
           </div>
           <GrClose onClick={removeItem} className="close" />

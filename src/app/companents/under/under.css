@@ -186,11 +186,20 @@
 @media(max-width:600px){
   .under-item{
     height: 80%;
+    font-size: 18px;
   }
-  .under-item .text-box .title{
-    display: none;
+  .under-item .text-box {
+    padding: 0;
+  }
 
+  .under-item .text-box .title{
+  font-size: medium;
+  width: 80vw;
   }
+  .under-item .text-box .nomer{
+    margin-top: -8px;
+  }
+
   .under-item .text-box .buy{
     position: absolute;
     bottom: 7px;
@@ -205,7 +214,4 @@
   .carousel-root {
     width: 70%;
    }
-
-
-
 }
