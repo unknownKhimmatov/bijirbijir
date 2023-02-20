@@ -161,13 +161,7 @@
     flex-direction: column;
     position: relative;
   }
-
-  .carousel-root {
-    width: 40%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
+ */
 
   .under-item .carousel .thumb {
     /* position: absolute;
